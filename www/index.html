@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://css3playground.com/3d-flip-cards/ -->
+<html lang="en-us" dir="ltr" class=" js no-touch cssanimations
+                                    csstransforms csstransforms3d
+                                    csstransitions cssfilters
+                                    preserve3d">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Flip memory</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" >
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" href="./css/csshake-horizontal.css">
+    <script src="./js/modernizr.min.js"></script>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+  </head>
+  <body>
+
+    <button id="score-container" type="button" class="btn btn-primary">Score: 0</button>
+
+    <div id="flip-table-container"/>
+    
+    <script id="flip-table-template" type="text/x-handlebars-template">
+      <table width="" cellspacing="" cellpadding="" border="">
+        {{#each rows}}
+        <tr>
+          {{#each this}}
+          <td>
+            <div class="click panel circle" data-num="{{number}}">
+              <div class="front" style = 'background-image: url(img/silly-smiley.png)'>
+              </div>
+              {{#if img}}
+              <div class="back" style = 'background-image: url(img/{{img}})'>
+                {{else}}
+                <div class="back">
+                  <h2 class="number">{{number}}</h2>
+                </div>
+                {{/if}}
+              </div>
+            </div>
+          </td>
+          {{/each}}          
+        </tr>
+        {{/each}}
+      </table>
+    </script>
+
+    <script src="./js/bundle.js"></script>       
+
+</body></html>

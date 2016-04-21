@@ -1,0 +1,19 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "csshake": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-s3": "^0.3.0",
+    "handlebars": "^4.0.5",
+    "lodash": "4.11.1"
+  }
+}
